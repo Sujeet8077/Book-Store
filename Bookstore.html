@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNook - Online Bookstore</title>
+    <link rel="stylesheet" href="Bookstore.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Book<span>Nook</span></div>
+        <p>Your online destination for great reads</p>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for books by title...">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h2>Featured Books</h2>
+        <div class="books-grid" id="books-container">
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    <div class="book-details" id="book-details">
+        <span class="close-btn" id="close-details">&times;</span>
+        <div class="detail-header">
+            <div class="detail-cover">
+                <div class="book-cover-placeholder">📖</div>
+            </div>
+            <div class="detail-info">
+                <h2 class="detail-title" id="detail-title"></h2>
+                <p class="detail-author" id="detail-author"></p>
+                <p class="detail-price" id="detail-price"></p>
+                <button class="view-details">Add to Cart</button>
+            </div>
+        </div>
+        <p class="detail-description" id="detail-description"></p>
+        <div class="detail-meta">
+            <div>
+                <h4>Pages</h4>
+                <p id="detail-pages"></p>
+            </div>
+            <div>
+                <h4>Year</h4>
+                <p id="detail-year"></p>
+            </div>
+            <div>
+                <h4>Genre</h4>
+                <p id="detail-genre"></p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Sujeet Singh - All rights reserved</p>
+    </footer>
+
+    <script src="Bookstore.js"></script>
+</body>
+</html>
